@@ -1,0 +1,113 @@
+* { 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body { 
+	font: 13px Helvetica, Arial;
+	background-color: #222;
+}
+
+form {
+	background: #000;
+	bottom: 0;
+	height: 5vh;
+}
+
+form input { 
+	border: 0;
+	padding: 10px;
+	width: 90%;
+	height: 100%;
+}
+
+form button { 
+	height: 100%;
+	width: 10%;
+	padding: 10px;
+
+	background-color: #F55;
+	border: none;
+	cursor: pointer;
+}
+
+#columns {
+	display: flex;
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: #252525;
+
+	border-left: 1px solid #000;
+}
+
+#messages-box {
+	width: 80%;
+}
+
+#message-container {
+	height: 95vh;
+	overflow-y: auto;
+}
+
+#messages {
+	height: auto;
+	min-height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	color: #FFF;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	overflow-y: auto;
+}
+
+#messages div { 
+	padding: 15px 10px;
+	min-height: 10px;
+	background-color: #444;
+}
+
+#messages div:nth-child(odd) { 
+	background-color: #666;
+}
+
+
+#userlist {
+	width: 20%;
+	color: #FFF;
+	font-size: 18px;
+	list-style-type: disc;
+
+	background-color: #282828;
+
+
+	padding: 15px;
+	border: 1px solid #000;
+	border-top: none;
+	border-bottom: none;
+}
+
+#userlist p {
+	padding: 10px 0;
+}
+
+
+.name {
+	font-size: 18px;
+	padding-right: 12px;
+}
+
+.timestamp {
+	color: #DDD;
+	font-size: 12px;
+}
+
+.text {
+	color: #FFF;
+	font-size: 13px;
+	padding-top: 5px;
+	word-break: break-word;
+}
